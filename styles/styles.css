@@ -28,21 +28,23 @@ header {
   text-align: center; /* Centers the text */
 }
 
+/* Default Navigation Styling */
 header nav ul {
-  list-style: none; /* Removes default bullet points */
+  list-style: none;
   padding: 0;
   margin: 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items */
+  gap: 15px; /* Space between items */
 }
-
-header nav ul li {
-  display: inline; /* Makes list items appear side by side */
-  margin: 0 15px; /* Adds space between menu items */
-}
-
 header nav ul li a {
   color: white; /* White text */
   text-decoration: none; /* Removes underline */
   font-weight: bold;
+}
+/* Makes Menu Items Responsive */
+header nav ul li {
+  font-size: 1rem;
 }
 
 /* 
@@ -151,5 +153,16 @@ header nav ul li a {
 
   .hero-content h2 {
     font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: row; /* Stack menu items vertically */
+    text-align: center; /* Align items in the center */
+  }
+
+  header nav ul li {
+    margin: 10px 0; /* Add space between menu items */
   }
 }
