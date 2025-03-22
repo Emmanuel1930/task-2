@@ -4,16 +4,16 @@
 ======================================
 */
 body {
-  font-family: Arial, sans-serif; /* Sets a readable font */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Center content properly */
 .container {
-  width: 90%; /* Makes sure content is not too wide */
-  margin: auto; /* Centers content */
-  max-width: 1200px; /* Prevents it from getting too wide */
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
 }
 
 /* 
@@ -22,10 +22,10 @@ body {
 ======================================
 */
 header {
-  background: #000; /* Black background for header */
-  color: white; /* White text for contrast */
-  padding: 15px 0; /* Space above and below header */
-  text-align: center; /* Centers the text */
+  background: #000;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
 }
 
 /* Default Navigation Styling */
@@ -33,16 +33,16 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Use Flexbox */
-  justify-content: center; /* Center items */
-  gap: 15px; /* Space between items */
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 header nav ul li a {
-  color: white; /* White text */
-  text-decoration: none; /* Removes underline */
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
-/* Makes Menu Items Responsive */
+
 header nav ul li {
   font-size: 1rem;
 }
@@ -53,37 +53,38 @@ header nav ul li {
 ======================================
 */
 .hero {
-  position: relative; /* Allows absolute positioning for the overlay */
-  background: url("../assets/herobg.jpeg") center/cover no-repeat; /* Background image */
-  height: 90vh; /* Takes up 90% of the screen height */
-  display: flex; /* Enables flexbox for centering */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  text-align: center; /* Centers text */
-  color: white; /* White text for contrast */
+  position: relative;
+  background-image: url("../assets/herobg.jpeg");
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
-
-/* Dark overlay effect */
 .hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  width: 100%;
+  background: rbg(0 0 0 0.5);
 }
 
 /* Text content inside the hero */
 .hero-content {
-  position: relative; /* Makes text appear above overlay */
-  z-index: 1; /* Ensures text is on top */
-  max-width: 600px; /* Limits text width */
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
   padding: 20px;
 }
 
 /* Main heading */
 .hero-content h2 {
-  font-size: 2rem; /* Adjusts size */
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -101,13 +102,13 @@ header nav ul li {
 
 /* Button container */
 .btn {
-  display: inline-block; /* Makes button behave like a block but inline */
+  display: inline-block;
   margin: 0 10px;
-  padding: 12px 20px; /* Adds padding inside the button */
-  text-decoration: none; /* Removes underline */
+  padding: 12px 20px;
+  text-decoration: none;
   font-weight: bold;
-  border-radius: 5px; /* Rounds the corners */
-  transition: background 0.3s; /* Smooth color transition */
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 /* Light button */
 .btn-light {
@@ -158,11 +159,11 @@ header nav ul li {
 
 @media (max-width: 768px) {
   header nav ul {
-    flex-direction: row; /* Stack menu items vertically */
-    text-align: center; /* Align items in the center */
+    flex-direction: row;
+    text-align: center;
   }
 
   header nav ul li {
-    margin: 10px 0; /* Add space between menu items */
+    margin: 10px 0;
   }
 }
